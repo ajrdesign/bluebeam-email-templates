@@ -9,8 +9,8 @@ It's very important to follow this process for email production else there will 
 1. Create a copy of one of the base templates.
 2. Add content/design to your template.
 3. Send it off for approval/revisions.
-4. Once approved run the code through this: http://beaker.mailchimp.com/inline-css NOTE: Make sure "Strip out Original CSS <Style> Tags" is not checked.
-5. Remove all but the @media tags in the <style> tags. All responsive elements need to remain in the <head>.
+4. Once approved run the code through this: http://beaker.mailchimp.com/inline-css NOTE: Make sure "Strip out Original CSS Style Tags" is not checked.
+5. Remove all but the @media tags in the style tags. All responsive elements need to remain in the head.
 6. Send that code to the responsible party.
 
 Email Blueprints
