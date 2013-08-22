@@ -51,7 +51,6 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border:1px solid #444444;
 			}
 
 			/**
@@ -105,12 +104,12 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#606060 !important;
+				/*@editable*/ color:#0083db !important;
 				display:block;
 				/*@editable*/ font-family: Calibri, Candara, Segoe, 'Segoe UI', Arial, sans-serif;
-				/*@editable*/ font-size:16px;
-				/*@editable*/ font-style:italic;
-				/*@editable*/ font-weight:normal;
+				/*@editable*/ font-size:18px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
@@ -130,7 +129,7 @@
 				/*@editable*/ color:#808080 !important;
 				display:block;
 				/*@editable*/ font-family: Calibri, Candara, Segoe, 'Segoe UI', Arial, sans-serif;
-				/*@editable*/ font-size:14px;
+				/*@editable*/ font-size:16px;
 				/*@editable*/ font-style:italic;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ line-height:100%;
@@ -234,8 +233,6 @@
 			*/
 			#templateBody{
 				/*@editable*/ background-color:#333333;
-				/*@editable*/ border-top:1px solid #444444;
-				/*@editable*/ border-bottom:1px solid #444444;
 			}
 
 			/**
@@ -254,6 +251,11 @@
 				padding-bottom:20px;
 				padding-left:20px;
 			}
+
+			.templateColumnContainer{
+			/*@editable*/ font-family: Calibri, Candara, Segoe, 'Segoe UI', Arial, sans-serif;
+				/*@editable*/ font-size:16px;
+			/*@editable*/ color:#ffffff;}
 
 			/**
 			* @tab Body
@@ -282,15 +284,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background: rgb(68,68,68); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(68,68,68,1) 1%, rgba(34,34,34,1) 99%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(68,68,68,1)), color-stop(99%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(68,68,68,1) 1%,rgba(34,34,34,1) 99%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(68,68,68,1) 1%,rgba(34,34,34,1) 99%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(68,68,68,1) 1%,rgba(34,34,34,1) 99%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(68,68,68,1) 1%,rgba(34,34,34,1) 99%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
-				/*@editable*/ border-top:1px solid #555555;
+				/*@editable*/ background:#444444;
 			}
 
 			/**
@@ -428,6 +422,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', end
 					/*@editable*/ font-size:18px !important;
 					/*@editable*/ line-height:125% !important;
 				}
+				/* ======== Column Styles ======== */
+
+				.templateColumnContainer{display:block !important; width:100% !important;}
+
+				/**
+				* @tab Mobile Styles
+				* @section column image
+				* @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				.columnImage{
+					height:auto !important;
+					/*@editable*/ max-width:480px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section left column text
+				* @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.leftColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section center column text
+				* @tip Make the center column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.centerColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section right column text
+				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.rightColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
 
 				/* ======== Footer Styles ======== */
 
@@ -477,15 +515,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', end
                                         <tr>
                                             <td valign="top" class="bodyContent">
                                                 <h2>Share design feedback faster using Bluebeam® Revu®</h2>
-                                                Bluebeam Revu is a popular PDF Solution used by over half of the top contractors and design firms in the nation to help achieve better online collaboration. Bluebeam Revu can speed up your design review process by 30%. From design review to fabrication, Bluebeam Revu provides manufacturing firms with 2D and 3D PDF-based workflow solutions that improve project communication and productivity. 
-                                                <br />
-                                                <br />
-                                                <img src="http://www.bluebeam.com/us/_media/html/channel/_media/manufactures-screenshots.png"/>
-                                                <br />
-                                                <br />
-                                                Revu allows you to Create 2D and 3D PDFs with the click of a button from AutoCAD®, Solidworks® or any IFC file.  Redline with customizable markups tools and comment on the same set of drawings with project partners around the world in real time. 
+                                                Revu is a leading PDF solution used by over half the top US design firms to help achieve better online collaboration. Speed up your design review process by 30% with 2D & 3D PDF-based workflow solutions that improve project communication and productivity. From design review to fabrication, Bluebeam is manufacturing's PDF solution.  
                                             </td>
                                         </tr>
+                                        <tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN COLUMNS // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                    	<tr>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding:20px;">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="leftColumnContent">
+                                                        	<img src="http://www.bluebeam.com/us/_media/html/channel/_media/manufactures-email-create.png" style="max-width:160px;" class="columnImage"/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+                                                    		<br />
+                                                            <h3>Create</h3>
+                                                            Create 2D and 3D PDFs with the click of a button from AutoCAD®, Solidworks® or any IFC file.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding:20px;">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="centerColumnContent">
+                                                        	<img src="http://bluebeam.com/us/_media/pngs/solutions-manufactures-comment.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="centerColumnContent" mc:edit="center_column_content">
+                                                    		<br />
+                                                            <h3>Comment</h3>
+                                                            Markup 2D and 3D PDFs with customizable markups tools, such as callouts, clouds, text and highlights.
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding:20px;">
+                                            	<table border="0" cellpadding="0"  cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="rightColumnContent">
+                                                        	<img src="http://www.bluebeam.com/us/_media/html/channel/_media/manufactures-email-collaborate.png" style="max-width:160px;" class="columnImage" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_columntent">
+                                                    		<br />
+                           	                               <h3>Collaborate</h3>
+                                                            Review and comment on the same set of drawings with project partners around the world in real time using Revu's integrated collaboration solution, Bluebeam Studio.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END COLUMNS -->
+                                </td>
+                            </tr>
                                         <tr>
 	                                        <td valign="top" class="bodyContent" align="center">
 			                                    <a href="http://www.bluebeam.com/us/solutions/case-studies/">Read case studies</a> from real customers and learn how Revu has changed<br /> the way they work.
